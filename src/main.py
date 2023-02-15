@@ -9,7 +9,7 @@ def main():
     TEMPLATE_FILE_PATH = r".\templates\sprawozdanie_template.tex"
     NEW_FILE_NAME = fr".\{REPORT_FOLDER}\sprawozdanie.tex"
 
-    IMG_SIZE = {"width": 9, "height": 6}
+    IMG_SIZE = {"width": 15.5, "height": None}
 
     generator = LatexGenerator(IMG_SIZE)
     doc = generator.generate(IMAGES_PATH, TEMPLATE_FILE_PATH)
@@ -123,12 +123,12 @@ class LatexGenerator():
 
         # textwrap.dedent needed to remove unwanted indents from str
         template = r"""
-            %\begin{figure}[!htb]
-             %   \centering
+            \begin{figure}[!htb]
+                \centering
                 \includegraphics[<size_argument>]{<name>}
-             %   \caption{}
-              %  \label{fig:<subsection>.<img_num>}
-            %\end{figure}"""
+                \caption{}
+                \label{fig:<subsection>.<img_num>}
+            \end{figure}"""
         template = textwrap.dedent(template)
 
         template = template.replace("<size_argument>", size_arguments)
