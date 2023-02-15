@@ -1,0 +1,162 @@
+\documentclass[12pt]{article}
+\usepackage{lingmacros}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\selectlanguage{polish}
+
+% !TeX TS-program = pdflatex
+% !TeX spellcheck = pl_PL
+% !TeX encoding = UTF-8
+
+
+% Bottom margin is set low, this is to allow bigger pictures to fit, normal is 25mm
+\usepackage[left=20mm,right=20mm,top=20mm,bottom=20mm,nohead]{geometry}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage{amssymb}
+\usepackage{amsopn}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{lmodern}
+\usepackage{polski}
+
+\usepackage{tree-dvips}
+\usepackage{mathrsfs}
+\usepackage{amsmath, amssymb}
+\usepackage{xparse}
+\usepackage{amsmath,mleftright}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{caption}
+
+\DeclareCaptionFormat{myformat}
+{%
+    \small{#1#2#3}
+}
+
+\DeclareCaptionLabelSeparator{mysep}{:\space}
+
+\captionsetup[figure]{name={Zdjęcie},labelsep=mysep, format=myformat}
+
+
+
+
+
+% This is a preffered way of inserting photos
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[height=9cm]{photo.png}
+%	\caption{description or leave blank or delete command}
+%	\label{fig:1.4}
+%\end{figure}
+
+
+% This is a preffered way of inserting conclusions
+%\subsection{Wnioski}
+%
+%\begin{itemize}
+%
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+%
+%\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+%
+%\end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\fontfamily{phv}\selectfont
+\centering
+
+\vspace*{\baselineskip}
+\vspace{1\baselineskip}
+
+\begingroup
+    \fontsize{25pt}{12pt}
+    \fontfamily{pag}\selectfont
+    \textbf{SPRAWOZDANIE}
+\endgroup
+
+\vspace{4\baselineskip}
+
+\begingroup
+    \fontsize{21pt}{12pt} \selectfont
+    Ćwiczenie X
+\endgroup
+
+\vspace{1.5\baselineskip}
+
+\begingroup
+    \fontsize{18pt}{18pt}
+    \selectfont
+    Przykładowy tytuł ćwiczenia - Lorem ipsum dolor sit amet, consectetur adipiscing elit
+\endgroup
+
+\vspace{6\baselineskip}
+
+\begin{flushleft}
+\begingroup
+    \fontsize{16pt}{10pt}\selectfont
+    Wykonane przez:
+\endgroup
+\vspace{0.8\baselineskip}
+
+
+{\fontsize{14pt}{10pt}\selectfont
+\begin{tabular}{ll}
+	\hspace{1em}\vspace{0.6em}
+	qwertyuiop asdfghjkl & 123456\\
+	\hspace{1em}\vspace{0.6em}
+	qwertyuiop asdfghjkl & 123456\\
+	\hspace{1em}\vspace{0.6em}
+	qwertyuiop asdfghjkl & 123456\\
+\end{tabular}
+}%
+
+\end{flushleft}
+
+\vfill
+
+\end{titlepage}
+
+\section{Część laboratoryjna}
+
+<CONTENT>
+
+
+\pagebreak % pagebreak is important, without it text may render between figures, not at the and of all figures like it should
+\quad
+
+
+\section{Wnioski}
+
+\begin{itemize}
+
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\item Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+\end{itemize}
+
+\end{document}

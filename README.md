@@ -1,1 +1,1 @@
-# LaTeX-generator
+# latex-generator
